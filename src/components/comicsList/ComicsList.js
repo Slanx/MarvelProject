@@ -31,6 +31,8 @@ const ComicsList = (props) => {
 
   useEffect(() => {
     onRequest(offset, true);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onRequest = (offset, initial) => {
@@ -80,8 +82,6 @@ const ComicsList = (props) => {
     });
     return <ul className="comics__grid">{items}</ul>;
   }
-
-  const items = renderItems(comicsList);
 
   return (
     <div className="comics__list">
