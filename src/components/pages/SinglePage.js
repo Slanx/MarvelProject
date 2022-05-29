@@ -13,6 +13,7 @@ const SinglePage = ({ BaseComponent, urlData }) => {
 
   useEffect(() => {
     updateData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params[urlData]]);
 
   const updateData = () => {
