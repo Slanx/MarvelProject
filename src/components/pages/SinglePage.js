@@ -6,8 +6,6 @@ import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 import AppBanner from '../appBanner/AppBanner';
 
-import './singlePage.scss';
-
 const SinglePage = ({ BaseComponent, urlData }) => {
   const params = useParams();
   const [item, setItem] = useState(null);
