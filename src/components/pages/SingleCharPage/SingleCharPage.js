@@ -2,11 +2,11 @@ import './singleCharPage.scss';
 
 import { Helmet } from 'react-helmet';
 
-const SingleCharPage = ({ item }) => {
-  const { name, description, thumbnail } = item;
+const SingleCharPage = ({ data }) => {
+  const { name, description, thumbnail } = data;
 
   return (
-    <div className="single-char single-page">
+    <div className="single-char">
       <Helmet>
         <meta name="description" content={`${name} page`} />
         <title>{`${name} page`}</title>
